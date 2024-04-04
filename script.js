@@ -115,12 +115,13 @@ const fazerCheckIn = (event) => {
   // MENSAGEM DE CONFIRMAÇÃO
 const mensagemConfirm = "Tem certeza que deseja fazer o Check-In?"; 
 
-if (confirm(mensagemConfirm === false)){
-  return 
-};
+if (confirm(mensagemConfirm) === false){
+  return;
+}
 
-alert(resultado);
+alert("Check-In Efetuado!")
 
+    
   const email = event.target.dataset.email;
   const participant = participantes.find((p) => p.email === email);
 
